@@ -16,6 +16,30 @@ elements cannot simultaneously apply.
 
 ---
 
+## Priority, Selection, and OFF
+
+Priority does not disable or exclude blocks.
+
+Priority resolves conflicts **only among elements that are permitted to
+participate** in synthesis.
+
+When multiple permitted elements cannot all apply simultaneously, priority
+determines which element is selected for that synthesis outcome.
+
+Elements that are not selected:
+- remain defined
+- remain eligible
+- are not set OFF
+- may be selected in future synthesis passes
+
+**OFF** is the only mechanism that excludes an element from synthesis.
+OFF may be applied only through governance or explicit author intent.
+
+Priority cannot set OFF.
+Priority cannot override governance.
+
+---
+
 ## Purpose
 
 The purpose of priority is to:
@@ -43,6 +67,19 @@ It is not:
 - derived from outcomes
 
 If priority is not declared, no implicit priority exists.
+
+---
+
+## Interaction with Governance
+
+Priority is evaluated only after governance constraints are applied.
+
+Priority cannot:
+- enable elements excluded by governance
+- override governance decisions
+- bypass OFF states imposed by governance
+
+When governance excludes an element, priority is not evaluated for that element.
 
 ---
 
