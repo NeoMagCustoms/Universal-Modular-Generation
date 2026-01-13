@@ -96,6 +96,15 @@ Priority has no effect outside of conflict resolution.
 
 ---
 
+## Priority and Repeated Synthesis
+
+Priority resolution applies per synthesis pass.
+
+A selection outcome does not permanently exclude non-selected elements.
+Future synthesis passes may select different elements if inputs or constraints change.
+
+---
+
 ## Priority and Meaning
 
 Priority does **not** alter the meaning of a block.
