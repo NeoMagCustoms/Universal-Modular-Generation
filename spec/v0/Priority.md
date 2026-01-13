@@ -146,3 +146,22 @@ Priority is a deterministic, declarative mechanism for resolving conflicts
 during synthesis.
 
 It does not encode meaning, intent, or value—only resolution order.
+
+---
+
+## Clarification Note
+
+In this document, the terms *interaction* and *relationship* are used deliberately
+to describe different concerns:
+
+- **Interaction with Governance** refers to *operational sequencing* —  
+  what happens when priority and governance are both present during synthesis.
+
+- **Relationship to Governance** refers to *conceptual authority* —  
+  which mechanism is allowed to override another, under any circumstances.
+
+Interaction describes **how rules are applied**.  
+Relationship describes **which rules are supreme**.
+
+This distinction is intentional and prevents ambiguity between execution order
+and authority hierarchy.
