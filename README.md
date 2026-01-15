@@ -81,6 +81,21 @@ It generates cognitive structure, not behavior.
 
 ---
 
+## Canonical Implementations
+
+### UMG Compiler (Reference)
+
+**UMG Compiler** is the canonical reference compiler for Universal Modular Generation.
+
+- Repository: https://github.com/NeoMagCustoms/umg-compiler
+- Current release: v0.1.0
+- Purpose:
+  - Compiles UMG Sleeve JSON into deterministic **RuntimeSpec** + **Trace**
+  - Headless, auditable, no inference or execution
+  - Designed for CLI, library, and embedded use
+
+This compiler is the authoritative implementation of the UMG compilation model.
+
 ## Repository structure (overview)
 
 - `/spec` — canonical, versioned specifications (authoritative)  
