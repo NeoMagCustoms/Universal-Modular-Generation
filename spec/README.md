@@ -1,84 +1,28 @@
-# UMG Specification
+# Historical UMG Specification Archive
 
-This directory contains the authoritative specification for Universal Modular Generation (UMG).
+The material under `/spec/v0` is retained as a historical UMG specification generation.
 
-All normative definitions of UMG are defined here.
+It predates the H4-qualified compiler-vNext v0.1 freeze and includes concepts that are not current compiler-vNext semantics, including legacy Priority-era assumptions.
 
----
+## Current authority
 
-## Authority
+For current UMG work, start with:
 
-The contents of this directory are **normative** unless explicitly stated otherwise.
+- [`/CANON.md`](../CANON.md)
+- [`/docs/current/COMPILER.md`](../docs/current/COMPILER.md)
+- [`/docs/current/SLEEVE_AUTHORING.md`](../docs/current/SLEEVE_AUTHORING.md)
 
-If any conflict exists between:
-- documentation in `/docs`
-- examples in `/examples`
-- schemas or tooling behavior
-- reference applications or implementations
+Current compiler authority:
 
-the specification in this directory **takes precedence**.
+- compiler-vNext v0.1.0-experimental
+- H4 commit `c505f9a7f23010574733c8c03c4162af5317a5eb`
+- tag `compiler-vnext-v0.1.0-experimental-h4-qualified`
+- repository `https://github.com/NeoMagnetar/umg-compiler-vnext`
 
-Tooling and documentation must conform to the specification.  
-The specification does not conform to tooling.
+## Historical preservation rule
 
----
+Files under `/spec/v0` are preserved for provenance, migration research, and the history of UMG's development.
 
-## Scope
+Do not silently rewrite those historical documents to look like compiler-vNext. When concepts from `/spec/v0` conflict with current H4 compiler-vNext contracts, the historical material does not govern current compilation.
 
-The UMG specification defines:
-
-- the Cognitive Specification Layer (CSL)
-- Universal Modular Generation as a framework
-- block structure and roles
-- the Modular Operating Language of Thought (MOLT)
-- merge semantics
-- synthesis semantics
-- priority and governance rules
-- compiler resolution requirements
-- required output artifacts (RuntimeSpec and Trace)
-
-The specification does **not** define execution, runtime behavior, or learning systems.
-
-UMG specifies **cognitive structure**, not behavior.
-
----
-
-## Versioning
-
-Specifications are versioned and immutable once published.
-
-The current canonical version is:
-
-```
-spec/v0
-```
-
-Future revisions will be introduced as new versioned directories.  
-Existing versions will not be modified retroactively.
-
----
-
-## Relationship to Tooling
-
-Reference tooling exists to demonstrate and validate the specification.
-
-Tooling is **not authoritative**.  
-Multiple independent implementations are expected.
-
----
-
-## Reading Guidance (Non-Normative)
-
-There is no required reading order within the specification.
-
-Individual documents may be consulted independently.  
-Cross-references are provided where definitions depend on one another.
-
----
-
-## Status
-
-This specification is released under **research / alpha status**.
-
-Core definitions are considered stable for v0.  
-Any changes require explicit version advancement.
+Future formal UMG specification work should use a new explicitly versioned current-spec location and must state its relationship to the frozen compiler contract rather than retroactively changing `/spec/v0`.
